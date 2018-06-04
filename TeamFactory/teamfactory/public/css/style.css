@@ -1,0 +1,633 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700|Quicksand:300,400,700");
+
+/*=============================================
+=            Generique                        =
+=============================================*/
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #EEE;
+    color: #4A4A4A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+
+h1, h2 {
+    color: #D0021B;
+}
+
+a.btn-primary {
+    color: #FFF !important;
+}
+
+ul {
+    padding: 0;
+}
+
+a{
+    color : #4A4A4A;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #4A4A4A;
+    padding: 15px;
+    color: #fff;
+}
+
+footer .container {
+    background-color: transparent;
+    min-height: inherit;
+}
+
+.ellipsis{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.overflow {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(208, 2, 27, .6);
+    z-index: 999;
+    transition-duration: .7s;
+}
+
+.img-featured {
+    overflow: hidden;
+    position: relative;
+}
+
+.img-article:hover .overflow,
+.img-featured:hover .overflow {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*=============================================
+=            Button                           =
+=============================================*/
+.btn {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #D0021B;
+    border-color: #D0021B;
+}
+
+.btn-primary:hover {
+    background-color: #9B0013;
+    border-color: #9B0013;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled):focus {
+    background-color: #52000A !important;
+    border-color: #52000A !important;
+}
+
+
+.btn-default {
+    border-color: #D0021B;
+    color: #D0021B;
+    background-color: transparent;
+}
+
+.btn-add {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.btn-add .btn-icon {
+    margin-right: 5px;
+}
+
+.btn-add:hover .btn-icon{
+    transform: rotate(180deg);
+  }
+  
+ .btn-icon{
+    display: inline-block;/* mandatory to be able to use transform */
+    transition: 1s all;
+  }
+
+.btn-burger {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.btn-burger svg {
+    width: 25px;
+    height: auto;
+/*    Change the color here : */
+    fill: #ccc;
+}
+
+#bar-1,
+#bar-3 {
+    transition: .2s;
+    transform-origin: center;
+}
+
+.btn-burger.active svg #bar-1 {
+    transform: rotate(45deg);
+    
+}
+
+.btn-burger.active svg #bar-2 {
+    animation: fadeOut .2s forwards ease-in-out;
+}
+
+.btn-burger.active svg #bar-3 {
+    transform:  rotate(-45deg);
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+/*=====  End of Button                 ======*/
+
+input, select {
+    background: transparent !important;
+    border-width: 2px !important;
+    border-color: #9B9B9B !important;
+    margin-bottom: 10px;
+}
+
+hr {
+    margin-top: 0;
+}
+
+/* Diasble box-shadow on focus */
+.btn-primary:focus,
+.btn-primary.focus,
+input {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+.badge-pill {
+    padding: 10px;
+    border: 2px solid #D0021B;
+    color: #D0021B;
+    margin-bottom: 10px;
+}
+
+/* Mathilde je pense que cette partie est générique */
+
+.pp-user {
+    position: relative;
+    height: 119px;
+    width: 119px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 15px;
+    min-height: 727px;
+    position: relative;
+}
+
+/*=============================================
+=            Menu                             =
+=============================================*/
+
+.navbar a {
+    color: #D0021B;
+    transition-duration: .5s;
+}
+
+.navbar a:hover {
+    color: #9B0013;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    background-color: #FFF;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 540px) {
+    .navbar {
+        margin-bottom: 10px;
+    }
+}
+
+.nav-item {
+    margin: 0 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*=====  End of Menu                   ======*/
+
+/*=============================================
+=            Login                            =
+=============================================*/
+
+#login {
+    background-image: url('../img/bg-login.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+}
+
+#login .card {
+    min-height: 355px;
+    height: 355px;
+    width: 378px;
+    background-color: rgba(255, 255, 255, 0.75) !important;
+}
+
+#login .container {
+    height: 100%;
+    background-color: transparent;
+}
+
+#login h1 {
+    margin-top: 0.5rem;
+}
+
+#login a {
+    color: #D0021B;
+}
+
+#login form {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/*=====  End of Login                  ======*/
+
+/*=============================================
+=            Create Team                      =
+=============================================*/
+
+
+#create-team{
+    background-color: #EEE;
+}
+
+#create-team h1{
+    margin: 15px 0;
+}
+
+#create-team .container {
+    background-color: #FFF;
+    padding: 15px;
+    min-height: 727px;
+}
+
+.btn-random {
+    margin-left: 20px;
+    position: relative;
+}
+
+.btn-random:before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    left: -14px;
+    background-color: #ccc;
+}
+
+#create-team h1 {
+    margin: 15px 0;
+}
+
+.btn-random {
+    position: relative;
+    margin-left: 20px;
+}
+
+.btn-random:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -14px;
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: #ccc;
+}
+
+.pp-user {
+    height: 119px;
+    width: 119px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 auto 10px;
+    position: relative;
+    text-align: center;
+
+}
+
+.user-scrum .pp-user:after{
+content: "";
+border-radius: 50%;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+background-color: rgba(208, 2, 27, .5);
+position: absolute;
+}
+
+.user-scrum .pp-user:before {
+content: "S";
+color: #fff;
+position: absolute;
+z-index: 999;
+font-weight: 700;
+font-size: 30px;
+line-height: 119px;
+left: 45%;
+}
+
+#create-team .user-scrum .pp-user {
+    top: 0;
+    left: 0;
+    background-image: url("../img/RobertPaulson.png");
+    content: "";
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(208, 2, 27, 0.5);
+
+    /* position: absolute; */
+    background-size: cover;
+}
+
+#create-team .user-scrum .pp-user:before {
+    position: absolute;
+    left: 45%;
+    color: #fff;
+    z-index: 999;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 119px;
+}
+
+/*=====  End of Create-team                  ======*/
+
+/*=============================================
+=            User-list                        =
+=============================================*/
+
+#user-list .card {
+    background-color: #FFF;
+    margin: 20px 5px 0;
+    min-height: 355px;
+    max-height: 500px;
+}
+
+#user-list input {
+    margin-bottom: 0;
+}
+
+#user-list .toolbar {
+    box-shadow: inherit;
+}
+
+/*=====  End of User-list                  ======*/
+
+/*=============================================
+=            Profile                          =
+=============================================*/
+
+#user-profile .pp-user, #my-profile .pp-user {
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 auto 10px;
+    text-align: center;
+    background-image: url("../img/roro.jpg");
+    content: "";
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    background-color: rgba(208, 2, 27, 0.5);
+
+    /* position: absolute; */
+    background-size: cover;
+}
+
+@media screen and (max-width: 995px) {
+    #user-profile .pp-user, #my-profile .pp-user{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+#user-profile h2, #my-profile H2{
+    margin: auto;
+}
+
+#user-profile .liste-social li, #my-profile .liste-social li{
+    list-style: none;
+    color: #CCC;
+}
+
+#user-profile h1, #my-profile h1{
+    font-size: 28px;
+}
+
+#user-profile h1 .group, #my-profile h1 .group{
+    position: relative;
+    font-size: 15px !important;
+    color: #9b9b9b;
+    margin-left: 15px;
+}
+
+#user-profile h1 .group:before, #my-profile h1 .group:before{
+    position: absolute;
+    top: 0;
+    left: -15px;
+    content: "/";
+}
+
+#user-profile h2, #my-profile h2{
+    color: #3D3D3D;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#user-profile .badge-pill, #my-profile .badge-pill{
+    padding: 10px;
+    border: 2px solid #D0021B;
+    color: #D0021B;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+/*=====  End of User-list                  ======*/
+
+/*=============================================
+=               Dashboard                     =
+=============================================*/
+
+.card-article {
+    border: none;
+    border-radius: 0;
+}
+
+.card-article .card-body {
+    padding-top: 0 !important;
+}
+
+.img-article {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-article img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.date {
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    background-color: #D0021B;
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+    transition-duration: .5s;
+}
+
+.date:hover {
+    background-color: #9B0013;
+    cursor: pointer;
+}
+
+.date p {
+    margin-bottom: 0;
+}
+
+.date p.mois {
+    font-size: .8rem;
+}
+
+.desc {
+    width: calc(100% - 60px);
+    overflow: hidden;
+}
+
+.select-group {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    z-index: 9999;
+    color: #fff;
+    border-color: #fff;
+}
+
+.week {
+    background-color: rgba(0, 0, 0, .2);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+
+
+
+/*=============================================
+=                  404                        =
+=============================================*/
+
+.textcenter{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+/*=====            404                 ======*/
+
+
+/*=====  End of Dashboard              ======*/
+
+/*=============================================
+=               My-profile                     =
+=============================================*/
+
+#my-profile .cog {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    border: none;
+    background: transparent;
+    color: #3D3D3D;
+}
+
+#my-profile .social-icon {
+    width: 32px;
+    margin-right: 5px;
+}
+
+#my-profile .input-group {
+    margin-bottom: 5px;
+}
+
+#my-profile .bloc .form-control {
+    width: 400px;
+}
+
+#my-profile .form-check {
+    margin: 0;
+    margin-left: 5px;
+}
+
+#my-profile .form-check-label {
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+/*=====  End of My-profile             ======*/

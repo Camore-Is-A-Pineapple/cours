@@ -1,0 +1,59 @@
+body{
+	background: linear-gradient(to bottom right, red, purple, darkblue);
+	color: #fff
+}
+#Paragraph-Propriétés {
+	text-align: center;
+}
+.MouseMove{color: #FFA500;}
+.MouseMove:hover{color: red;}
+
+.menu{margin: auto;}
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+}
+
+ th, td {border: 1px solid ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

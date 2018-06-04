@@ -1,0 +1,37 @@
+# pour initialiser git dans un repertoire :
+- git init
+
+### Gestion d'index / dépot local ###
+
+# Pour Ajouter un fichier dans l'index et préparer le commit du dépot local :
+- git add
+# Pour pour déposer dans le dépot local :
+- git commit
+
+### Gestion du dépot local / dépot commun ###
+
+# Pour déposer dans le dépot commun :
+- git push
+# Pour récupérer du dépot commun : 
+- git pull
+
+### Outils de visualisation des commits / fichiers ###
+
+# Pour voir l'historique des commit :
+- git log
+# Pour suis les modification dans l'espace de travail et vérifie si les fichier du dépot local sont à jour.
+- git status
+
+### Gestion des branches ###
+
+# Pour créer une branche :
+- git branch "nom de la branche"
+
+# Pour changer de branche :
+- git checkout "nom de la branche"
+
+# Pour synchroniser deux branches mais ne déplacer que l'historique du dernier commit (le merge) [ce placer sur la branche de destination] :
+- git merge "nom de la branche avec la quelle on veux ce synchroniser"
+
+# Pour fusionner deux branches en récupérant tout les historiques de la branche déplacée [ce placer sur la branche a déplacer] :
+- git rebase "nom de la branche avec la quelle fusionner"

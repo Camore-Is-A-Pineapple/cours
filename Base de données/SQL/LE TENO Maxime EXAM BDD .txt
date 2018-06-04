@@ -1,0 +1,44 @@
+Question 1: Quel est le meilleur type de données pour une date de naissance ? Expliquez pourquoi.
+
+
+-C'est le type DATE qui est le plus adapté (ici) car elle permet une utilisation simple pour des traitements numériques ou de recherche.
+
+
+
+
+
+
+Question 2: Expliquez avec vos propres mots ce qu’est un modèle relationnel.
+
+
+- Ce sont les relations entre les données des tables.
+
+
+
+
+
+
+Question 3: Expliquez avec vos propres mots ce qu’est une clé primaire.
+
+
+- Une clé primaire est une clé pouvant être utilisé dans des tables (une par table) et impose une contrainte pour sa table (/et ses colones).
+
+
+
+
+
+
+Question 4: Expliquez avec vos propres mots ce qu’est une clé étrangère.
+
+
+- Les clés étrangères permettent de définir les liaisons entre plusieurs tables et leurs attributs
+
+
+
+
+
+
+Question 5: Combien d’octets utilise CHAR (12)
+
+
+- 12 octets.

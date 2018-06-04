@@ -1,0 +1,30 @@
+@-webkit-keyframes ThreeDimension {
+   0% {-webkit-transform: translate(0px,0) rotate(-15deg) skew(25deg,0);}
+   20% {-webkit-transform: translate(100px,0) rotate(-35deg) skew(45deg,0);}
+   45% {-webkit-transform: translate(200px,0) rotate(-15deg) skew(25deg,0);}
+   60% {-webkit-transform: translate(200px,0) rotate(45deg) skew(-75deg,0);}
+   80% {-webkit-transform: translate(75px,0) rotate(10deg) skew(-15,0);}
+   100% {-webkit-transform: translate(0px,0) rotate(0) skew(0,0);}
+}
+#ThreeD_Animation {
+font-size: 24px;
+width:  250px;
+height: 250px;
+position: absolute; top: 100px; left: 100px;
+background-color:white;
+background-image:
+  -webkit-radial-gradient(red 48px, transparent 144px),
+  -webkit-repeating-linear-gradient(45deg, red 1px,  yellow 4px, green 8px, red 12px, transparent 16px,
+                                    blue 20px, red 24px, transparent 18px, blue 12px);
+background-size: 250px 250px, 250px 250px;
+background-position: 0 0;
+-moz-box-shadow: 15px 20px 15px 1px rgba(0,0,0,0.4), 12px 12px 0px 8px rgba(0,0,0,0.4) inset;
+-webkit-box-shadow: 15px 20px 15px 1px rgba(0,0,0,0.4), 12px 12px 0px 8px rgba(0,0,0,0.4) inset;
+box-shadow: 15x 20px 15px 1px rgba(0,0,0,0.4), 12px 12px 0px 8px rgba(0,0,0,0.4) inset;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+resize:both;
+overflow:auto;
+-webkit-animation-name: ThreeDimension;
+-webkit-animation-duration: 14s;
+}

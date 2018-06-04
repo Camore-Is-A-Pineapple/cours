@@ -1,0 +1,3 @@
+/Users/maximeleteno/supercoin/src/Main/obj/Debug/netcoreapp2.0/Main.csproj.CoreCompileInputs.cache
+/Users/maximeleteno/supercoin/src/Main/obj/Debug/netcoreapp2.0/Main.AssemblyInfoInputs.cache
+/Users/maximeleteno/supercoin/src/Main/obj/Debug/netcoreapp2.0/Main.AssemblyInfo.cs
